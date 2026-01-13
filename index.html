@@ -1,0 +1,641 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AICSA | MRO urgente y maquinados industriales en Aguascalientes</title>
+  <meta name="description" content="AICSA en Aguascalientes. Abastecimiento MRO urgente (hard-to-find), rescate de paro de línea, sustitución de importaciones y maquinados. Cobertura centro del país. WhatsApp 449 195 6749." />
+  <meta name="robots" content="index,follow" />
+  <link rel="icon" href="favicon.ico" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="AICSA | MRO urgente y maquinados industriales" />
+  <meta property="og:description" content="MRO urgente (hard-to-find), rescate de paro de línea, sustitución de importaciones y maquinados. Aguascalientes y centro del país." />
+  <meta property="og:type" content="website" />
+  <!-- Si tienes una imagen real del taller, súbela como og.jpg y descomenta:
+  <meta property="og:image" content="og.jpg" /> -->
+
+  <!-- JSON-LD (SEO local) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"AICSA",
+    "telephone":"+52 449 195 6749",
+    "areaServed":"Centro de México",
+    "address":{
+      "@type":"PostalAddress",
+      "addressLocality":"Aguascalientes",
+      "addressRegion":"AGS",
+      "addressCountry":"MX"
+    },
+    "url":""
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#0b0f14;
+      --card:#0f1620;
+      --muted:#9fb0c0;
+      --text:#eaf2fb;
+      --line:rgba(255,255,255,.10);
+      --accent:#3ddc97;
+      --accent2:#52a8ff;
+      --warn:#ffcc66;
+      --shadow: 0 18px 50px rgba(0,0,0,.45);
+      --radius:18px;
+      --max:1100px;
+      --pad:20px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:radial-gradient(900px 600px at 20% -10%, rgba(82,168,255,.18), transparent 60%),
+                             radial-gradient(900px 600px at 90% 0%, rgba(61,220,151,.14), transparent 55%),
+                             var(--bg);
+              color:var(--text); font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif;}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+    .topbar{
+      position:sticky; top:0; z-index:50;
+      backdrop-filter: blur(10px);
+      background: rgba(11,15,20,.72);
+      border-bottom:1px solid var(--line);
+    }
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:14px; padding:14px 0;}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{
+      width:42px;height:42px;border-radius:12px;
+      background: linear-gradient(135deg, rgba(82,168,255,.25), rgba(61,220,151,.18));
+      border:1px solid var(--line);
+      display:flex;align-items:center;justify-content:center;
+      font-weight:800; letter-spacing:.5px;
+    }
+    .brand h1{font-size:16px;margin:0;line-height:1.1}
+    .brand small{display:block;color:var(--muted);font-size:12px;margin-top:2px}
+    .menu{display:flex;gap:14px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+    .menu a{color:var(--muted);font-size:13px;padding:8px 10px;border-radius:12px;border:1px solid transparent}
+    .menu a:hover{color:var(--text);border-color:var(--line);background:rgba(255,255,255,.03)}
+    .cta{
+      display:inline-flex;align-items:center;gap:10px;
+      padding:10px 14px;border-radius:14px;
+      background: linear-gradient(135deg, rgba(61,220,151,.18), rgba(82,168,255,.14));
+      border:1px solid rgba(255,255,255,.14);
+      box-shadow: 0 10px 24px rgba(0,0,0,.35);
+      font-weight:700;font-size:13px;
+      white-space:nowrap;
+    }
+    .cta:hover{transform:translateY(-1px)}
+    .hero{padding:50px 0 24px}
+    .hero-grid{display:grid;grid-template-columns: 1.15fr .85fr; gap:22px; align-items:stretch}
+    @media (max-width: 920px){ .hero-grid{grid-template-columns:1fr} .menu{display:none} }
+    .pillrow{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 16px}
+    .pill{
+      display:inline-flex;align-items:center;gap:8px;
+      border:1px solid var(--line);
+      color:var(--muted);
+      padding:8px 12px;border-radius:999px;
+      background: rgba(255,255,255,.03);
+      font-size:12px;
+    }
+    .hero h2{font-size:44px;line-height:1.05;margin:0 0 14px}
+    @media (max-width:520px){ .hero h2{font-size:36px} }
+    .hero p{margin:0 0 18px;color:var(--muted);font-size:16px;line-height:1.55;max-width:62ch}
+    .btnrow{display:flex;flex-wrap:wrap;gap:12px; margin-top:8px}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;gap:10px;
+      padding:12px 16px;border-radius:16px;border:1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.05);
+      font-weight:800;font-size:14px;
+      cursor:pointer;
+    }
+    .btn.primary{
+      background: linear-gradient(135deg, rgba(61,220,151,.28), rgba(61,220,151,.12));
+      border-color: rgba(61,220,151,.35);
+    }
+    .btn.secondary{
+      background: linear-gradient(135deg, rgba(82,168,255,.24), rgba(82,168,255,.10));
+      border-color: rgba(82,168,255,.35);
+    }
+    .btn:hover{transform:translateY(-1px)}
+    .panel{
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .panel .head{padding:18px 18px 10px;border-bottom:1px solid var(--line)}
+    .panel .head b{display:block;font-size:14px}
+    .panel .head span{display:block;color:var(--muted);font-size:12px;margin-top:6px}
+    .panel .body{padding:16px 18px}
+    .kpi{display:grid;grid-template-columns: 1fr 1fr; gap:12px}
+    @media (max-width:520px){ .kpi{grid-template-columns:1fr} }
+    .kpi .box{
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      border-radius:16px;
+      padding:14px;
+    }
+    .kpi .box b{font-size:13px}
+    .kpi .box p{margin:6px 0 0;color:var(--muted);font-size:12px;line-height:1.4}
+    section{padding:34px 0}
+    .section-title{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:14px}
+    .section-title h3{margin:0;font-size:22px}
+    .section-title p{margin:0;color:var(--muted);font-size:13px;max-width:60ch}
+    .grid3{display:grid;grid-template-columns: repeat(3, 1fr); gap:14px}
+    @media (max-width:920px){ .grid3{grid-template-columns:1fr} }
+    .card{
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      border-radius: var(--radius);
+      padding:18px;
+    }
+    .card b{display:block;font-size:15px;margin-bottom:8px}
+    .card ul{margin:0;padding-left:16px;color:var(--muted);font-size:13px;line-height:1.5}
+    .two{display:grid;grid-template-columns:1fr 1fr; gap:14px}
+    @media (max-width:920px){ .two{grid-template-columns:1fr} }
+    .steps{counter-reset: step}
+    .step{
+      position:relative;
+      padding:18px 18px 18px 52px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      border-radius: var(--radius);
+    }
+    .step:before{
+      counter-increment: step;
+      content: counter(step);
+      position:absolute; left:16px; top:16px;
+      width:26px;height:26px;border-radius:10px;
+      display:flex;align-items:center;justify-content:center;
+      font-weight:900;font-size:13px;
+      background: rgba(61,220,151,.18);
+      border:1px solid rgba(61,220,151,.35);
+    }
+    .step b{display:block;margin-bottom:6px}
+    .step p{margin:0;color:var(--muted);font-size:13px;line-height:1.5}
+    .gallery{
+      display:grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap:10px;
+    }
+    @media (max-width:920px){ .gallery{grid-template-columns:repeat(2,1fr)} }
+    .ph{
+      aspect-ratio: 4 / 3;
+      border-radius:16px;
+      border:1px dashed rgba(255,255,255,.22);
+      background: rgba(255,255,255,.02);
+      display:flex;align-items:center;justify-content:center;
+      color:var(--muted);
+      font-size:12px;
+      padding:10px;
+      text-align:center;
+    }
+    .contact{
+      display:grid;grid-template-columns: 1.2fr .8fr; gap:14px;
+      align-items:start;
+    }
+    @media (max-width:920px){ .contact{grid-template-columns:1fr} }
+    .input{display:flex;flex-direction:column;gap:6px;margin-bottom:10px}
+    label{color:var(--muted);font-size:12px}
+    input, textarea{
+      width:100%;
+      padding:12px 12px;
+      border-radius:14px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      color:var(--text);
+      outline:none;
+      font-size:14px;
+    }
+    textarea{min-height:110px;resize:vertical}
+    .foot{
+      padding:26px 0 36px;
+      border-top:1px solid var(--line);
+      color:var(--muted);
+      font-size:12px;
+    }
+    .wh-float{
+      position:fixed; right:16px; bottom:16px; z-index:60;
+      display:flex;gap:10px;align-items:center;
+      padding:12px 14px;border-radius:999px;
+      background: rgba(11,15,20,.72);
+      border:1px solid rgba(61,220,151,.35);
+      box-shadow: 0 18px 50px rgba(0,0,0,.45);
+      backdrop-filter: blur(10px);
+    }
+    .dot{
+      width:10px;height:10px;border-radius:999px;background:var(--accent);
+      box-shadow: 0 0 0 6px rgba(61,220,151,.12);
+    }
+    .wh-float b{font-size:13px}
+    .wh-float span{display:block;color:var(--muted);font-size:11px;margin-top:2px}
+    .smalllink{color:rgba(234,242,251,.88);text-decoration:underline;text-underline-offset:3px}
+  </style>
+</head>
+
+<body>
+  <!-- Barra superior -->
+  <div class="topbar">
+    <div class="wrap">
+      <div class="nav">
+        <div class="brand">
+          <div class="logo">A</div>
+          <div>
+            <h1>AICSA <small>Aguascalientes | Centro del país</small></h1>
+          </div>
+        </div>
+
+        <div class="menu" aria-label="Navegación">
+          <a href="#servicios">Servicios</a>
+          <a href="#proceso">Cómo trabajamos</a>
+          <a href="#industrias">Industrias</a>
+          <a href="#portafolio">Portafolio</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+
+        <a class="cta" href="https://wa.me/524491956749" target="_blank" rel="noopener">
+          Cotizar por WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <div class="pillrow">
+            <span class="pill">MRO urgente (hard-to-find)</span>
+            <span class="pill">Rescate de paro de línea</span>
+            <span class="pill">Sustitución de importaciones</span>
+          </div>
+
+          <h2>MRO urgente y maquinados industriales en Aguascalientes</h2>
+          <p>
+            Solucionamos paros de línea y refacciones difíciles de conseguir con respuesta rápida.
+            Abastecimiento MRO, alternativas compatibles y fabricación/ajuste de componentes.
+          </p>
+
+          <div class="btnrow">
+            <a class="btn primary" href="https://wa.me/524491956749?text=Hola%20AICSA%2C%20quiero%20cotizar.%20Te%20mando%20foto%2Fplaca%2Fplano%20y%20datos." target="_blank" rel="noopener">
+              Enviar foto/plano por WhatsApp
+            </a>
+            <a class="btn secondary" href="#contacto">
+              Solicitar cotización
+            </a>
+          </div>
+
+          <p style="margin-top:14px;font-size:13px;">
+            <span style="color:var(--warn);font-weight:800;">Para cotizar más rápido:</span>
+            manda foto/placa + 3 medidas + urgencia + ubicación.
+          </p>
+        </div>
+
+        <aside class="panel" aria-label="Panel de respuesta y cobertura">
+          <div class="head">
+            <b>Respuesta enfocada a continuidad operativa</b>
+            <span>Atención en Aguascalientes y cobertura en el centro del país.</span>
+          </div>
+          <div class="body">
+            <div class="kpi">
+              <div class="box">
+                <b>Urgencias MRO</b>
+                <p>Identificación por foto/placa y opciones: original / equivalente / alterno.</p>
+              </div>
+              <div class="box">
+                <b>Paro de línea</b>
+                <p>Plan rápido: suministro, reparación o fabricación compatible (si aplica).</p>
+              </div>
+              <div class="box">
+                <b>Maquinados</b>
+                <p>CNC y convencional para refacciones, ajustes, soportes, ejes, bujes y más.</p>
+              </div>
+              <div class="box">
+                <b>Centro del país</b>
+                <p>Soporte y envíos para industria en región centro.</p>
+              </div>
+            </div>
+
+            <div style="margin-top:14px;border-top:1px solid var(--line);padding-top:12px">
+              <b style="font-size:13px;">WhatsApp</b>
+              <div style="color:var(--muted);font-size:13px;margin-top:6px">
+                449 195 6749
+              </div>
+              <div style="margin-top:10px">
+                <a class="btn primary" style="width:100%" href="https://wa.me/524491956749" target="_blank" rel="noopener">
+                  Abrir WhatsApp
+                </a>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </header>
+
+  <!-- SERVICIOS -->
+  <section id="servicios">
+    <div class="wrap">
+      <div class="section-title">
+        <div>
+          <h3>Servicios</h3>
+          <p>Enfocados a mantenimiento industrial, continuidad operativa y fabricación de componentes.</p>
+        </div>
+      </div>
+
+      <div class="grid3">
+        <div class="card">
+          <b>Abastecimiento MRO (urgentes y hard-to-find)</b>
+          <ul>
+            <li>Búsqueda y validación de especificación/compatibilidad</li>
+            <li>Opciones: original / equivalente / alterno</li>
+            <li>Entrega local y envíos al centro del país</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <b>Rescate de paro de línea</b>
+          <ul>
+            <li>Atención prioritaria a casos críticos</li>
+            <li>Alternativas viables para recuperar operación</li>
+            <li>Seguimiento hasta cierre</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <b>Sustitución de importaciones</b>
+          <ul>
+            <li>Equivalencias y adaptación cuando aplica</li>
+            <li>Reingeniería por muestra o plano</li>
+            <li>Reducción de tiempos de entrega</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <b>Mecanizado CNC</b>
+          <ul>
+            <li>Refacciones y componentes bajo plano o muestra</li>
+            <li>Soportes, placas, alojamientos, adaptadores</li>
+            <li>Enfoque a funcionalidad y tiempo</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <b>Mecanizado convencional</b>
+          <ul>
+            <li>Ejes, bujes, ajustes, reparaciones</li>
+            <li>Recuperación de piezas y mecanizados de precisión</li>
+            <li>Apoyo a mantenimiento</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <b>Soldadura y pailería (TIG/MIG)</b>
+          <ul>
+            <li>Fabricación y reparación de estructuras</li>
+            <li>Soportes, bases, guardas, modificaciones</li>
+            <li>Trabajo industrial</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEMAS / SOLUCIONES -->
+  <section>
+    <div class="wrap">
+      <div class="section-title">
+        <div>
+          <h3>Qué resolvemos</h3>
+          <p>Casos típicos donde AICSA ayuda a recuperar operación y reducir tiempos.</p>
+        </div>
+      </div>
+
+      <div class="two">
+        <div class="card">
+          <b>Situaciones comunes</b>
+          <ul>
+            <li>Paro de línea por refacción descontinuada</li>
+            <li>Refacción sin número de parte (solo foto/placa)</li>
+            <li>Importado sin stock o con entrega larga</li>
+            <li>Componente dañado: reparar vs fabricar vs sustituir</li>
+            <li>Necesidad de alternativa compatible inmediata</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <b>Lo que pedimos para cotizar rápido</b>
+          <ul>
+            <li>Foto/placa/plano (si existe)</li>
+            <li>3 medidas clave o dimensión crítica</li>
+            <li>Voltaje / tipo de conexión (si aplica)</li>
+            <li>Cantidad y urgencia</li>
+            <li>Ubicación de entrega</li>
+          </ul>
+          <div style="margin-top:12px">
+            <a class="btn primary" style="width:100%" href="https://wa.me/524491956749?text=Hola%20AICSA%2C%20quiero%20cotizar.%20Te%20mando%20foto%2Fplaca%2Fplano%20y%20datos." target="_blank" rel="noopener">
+              Mandar información por WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESO -->
+  <section id="proceso">
+    <div class="wrap">
+      <div class="section-title">
+        <div>
+          <h3>Cómo trabajamos</h3>
+          <p>Proceso simple para avanzar rápido desde el diagnóstico hasta la entrega.</p>
+        </div>
+      </div>
+
+      <div class="two steps">
+        <div class="step">
+          <b>Nos envías datos</b>
+          <p>Foto/placa/plano + medidas + urgencia + ubicación.</p>
+        </div>
+        <div class="step">
+          <b>Validamos especificación</b>
+          <p>Confirmamos compatibilidad y proponemos opciones viables.</p>
+        </div>
+        <div class="step">
+          <b>Cotizamos con alternativas</b>
+          <p>Original / equivalente / alterno o reparación (cuando aplica).</p>
+        </div>
+        <div class="step">
+          <b>Entrega y seguimiento</b>
+          <p>Coordinamos entrega y cierre del caso con evidencia básica.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INDUSTRIAS -->
+  <section id="industrias">
+    <div class="wrap">
+      <div class="section-title">
+        <div>
+          <h3>Industrias</h3>
+          <p>Atendemos necesidades de mantenimiento y fabricación en distintos entornos industriales.</p>
+        </div>
+      </div>
+
+      <div class="grid3">
+        <div class="card"><b>Automotriz y autopartes</b><ul><li>Mantenimiento y soporte a líneas</li><li>Refacciones y fabricación de componentes</li></ul></div>
+        <div class="card"><b>Metalmecánica</b><ul><li>Maquinados, reparaciones y soportes</li><li>Fabricación y modificaciones</li></ul></div>
+        <div class="card"><b>Alimentos y empaque</b><ul><li>MRO crítico y continuidad</li><li>Adaptaciones y reparaciones</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTAFOLIO -->
+  <section id="portafolio">
+    <div class="wrap">
+      <div class="section-title">
+        <div>
+          <h3>Portafolio (fotos reales)</h3>
+          <p>Reemplaza estos cuadros por tus fotos reales (taller, piezas, trabajos, antes/después).</p>
+        </div>
+        <p><a class="smalllink" href="#contacto">¿Quieres que lo armemos por secciones? Mándame 10–15 fotos.</a></p>
+      </div>
+
+      <!-- TIP: Sustituye cada .ph por <img src="foto1.jpg" ...> -->
+      <div class="gallery" aria-label="Galería">
+        <div class="ph">Foto 1<br/>Taller / maquinaria</div>
+        <div class="ph">Foto 2<br/>MRO / refacción</div>
+        <div class="ph">Foto 3<br/>Maquinado</div>
+        <div class="ph">Foto 4<br/>Soldadura / pailería</div>
+        <div class="ph">Foto 5<br/>Antes / después</div>
+        <div class="ph">Foto 6<br/>Detalle de pieza</div>
+        <div class="ph">Foto 7<br/>Instalación / soporte</div>
+        <div class="ph">Foto 8<br/>Entrega / evidencia</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto">
+    <div class="wrap">
+      <div class="section-title">
+        <div>
+          <h3>Contacto / Cotizar</h3>
+          <p>La forma más rápida es WhatsApp. Si prefieres, usa este formulario (envía por correo).</p>
+        </div>
+      </div>
+
+      <div class="contact">
+        <div class="panel">
+          <div class="head">
+            <b>Solicitar cotización</b>
+            <span>Este formulario abre tu correo con el mensaje armado (sin backend).</span>
+          </div>
+          <div class="body">
+            <form id="quoteForm">
+              <div class="input">
+                <label for="name">Nombre</label>
+                <input id="name" name="name" placeholder="Tu nombre" required />
+              </div>
+              <div class="input">
+                <label for="company">Empresa</label>
+                <input id="company" name="company" placeholder="Nombre de la empresa" />
+              </div>
+              <div class="two" style="gap:10px">
+                <div class="input">
+                  <label for="phone">Teléfono</label>
+                  <input id="phone" name="phone" placeholder="Ej. 449..." />
+                </div>
+                <div class="input">
+                  <label for="email">Correo</label>
+                  <input id="email" name="email" type="email" placeholder="tucorreo@empresa.com" />
+                </div>
+              </div>
+              <div class="input">
+                <label for="msg">Qué necesitas (parte/medidas/urgencia)</label>
+                <textarea id="msg" name="msg" placeholder="Ej. Urge relevador de seguridad / tengo foto y placa / entrega en..." required></textarea>
+              </div>
+              <button class="btn primary" type="submit">Enviar solicitud</button>
+              <p style="margin:10px 0 0;color:var(--muted);font-size:12px;line-height:1.4">
+                Tip: si tienes foto/placa/plano, mejor mándalo por WhatsApp.
+              </p>
+            </form>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="head">
+            <b>WhatsApp directo</b>
+            <span>Respuesta rápida para urgencias MRO y paro de línea.</span>
+          </div>
+          <div class="body">
+            <div class="card" style="padding:14px;margin-bottom:12px">
+              <b style="margin:0 0 4px">449 195 6749</b>
+              <div style="color:var(--muted);font-size:13px;line-height:1.5">
+                Aguascalientes<br/>Cobertura centro del país
+              </div>
+            </div>
+            <a class="btn primary" style="width:100%" href="https://wa.me/524491956749?text=Hola%20AICSA%2C%20quiero%20cotizar.%20Te%20mando%20foto%2Fplaca%2Fplano%20y%20datos." target="_blank" rel="noopener">
+              Abrir WhatsApp con mensaje
+            </a>
+            <div style="margin-top:12px;border-top:1px solid var(--line);padding-top:12px">
+              <b style="font-size:13px">Para cotizar rápido</b>
+              <ul style="margin:8px 0 0;padding-left:16px;color:var(--muted);font-size:13px;line-height:1.5">
+                <li>Foto/placa/plano</li>
+                <li>3 medidas clave</li>
+                <li>Urgencia y ubicación</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <div class="wrap">
+      <div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap">
+        <div>© <span id="year"></span> AICSA. Aguascalientes, MX.</div>
+        <div>
+          <a class="smalllink" href="https://wa.me/524491956749" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón flotante WhatsApp -->
+  <a class="wh-float" href="https://wa.me/524491956749" target="_blank" rel="noopener" aria-label="Abrir WhatsApp">
+    <span class="dot"></span>
+    <div>
+      <b>Cotizar por WhatsApp</b>
+      <span>449 195 6749</span>
+    </div>
+  </a>
+
+  <script>
+    // Año en footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Formulario -> mailto (cambia el correo destino abajo)
+    const DEST_EMAIL = "cotizaciones@tudominio.com"; // <-- CAMBIA ESTO
+    document.getElementById("quoteForm").addEventListener("submit", (e) => {
+      e.preventDefault();
+      const name = document.getElementById("name").value.trim();
+      const company = document.getElementById("company").value.trim();
+      const phone = document.getElementById("phone").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const msg = document.getElementById("msg").value.trim();
+
+      const subject = encodeURIComponent("Solicitud de cotización - AICSA");
+      const body = encodeURIComponent(
+        `Nombre: ${name}\nEmpresa: ${company}\nTeléfono: ${phone}\nCorreo: ${email}\n\nDetalle:\n${msg}\n\n(Enviado desde la web de AICSA)`
+      );
+
+      window.location.href = `mailto:${DEST_EMAIL}?subject=${subject}&body=${body}`;
+    });
+  </script>
+</body>
+</html>
